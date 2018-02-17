@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="3">
+
+            <!--
+              *******************************
+              * Side Menu1 - Ippin
+              *******************************
+            -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorClaret"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/sub_menu1"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_header_size" />
+            </TableRow>
+
+            <!-- ippin No.1 -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorClassic"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/gyoza5_name"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_food_name" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/ivGyoza5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/hakata_ramen_description"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:src="@drawable/ic_side_96_gyoza5" />
+
+                <NumberPicker
+                    android:id="@+id/Gyoza5_NumberPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_column="2"/>
+
+                <Button
+                    android:id="@+id/btGyoza5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_column="3"
+                    android:text="@string/side_indication" />
+            </TableRow>
+
+            <!-- ippin No.2 -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorClassic"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/karaage5_name"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_food_name" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/ivKaraage5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/hakata_ramen_description"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:src="@drawable/ic_side_96_karaage5" />
+
+                <NumberPicker
+                    android:id="@+id/Karaage5_NumberPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_column="2"/>
+
+                <Button
+                    android:id="@+id/btKaraage5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_column="3"
+                    android:text="@string/side_indication" />
+            </TableRow>
+
+            <!-- ippin No.3 -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorClassic"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/yasai_itame_name"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_food_name" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/ivYasaiItame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/hakata_ramen_description"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:src="@drawable/ic_side_96_yasai_itame" />
+
+                <NumberPicker
+                    android:id="@+id/YasaiItame_NumberPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_column="2"/>
+
+                <Button
+                    android:id="@+id/btYasaiItame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_column="3"
+                    android:text="@string/side_indication" />
+            </TableRow>
+
+            <!--
+              *******************************
+              * Side Menu2 - Gohan
+              *******************************
+            -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorClaret"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/sub_menu2"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_header_size" />
+            </TableRow>
+
+            <!-- ippin No.4 -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorClassic"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/charhan_name"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_food_name" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/ivCharhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/hakata_ramen_description"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:src="@drawable/ic_side_96_charhan" />
+
+                <NumberPicker
+                    android:id="@+id/Charhan_NumberPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_column="2"/>
+
+                <Button
+                    android:id="@+id/btCharhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_column="3"
+                    android:text="@string/side_indication" />
+            </TableRow>
+
+            <!-- ippin No.5 -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorClassic"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/charhan_mini_name"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_food_name" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/ivCharhanMini"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/hakata_ramen_description"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:src="@drawable/ic_side_96_charhan_mini" />
+
+                <NumberPicker
+                    android:id="@+id/CharhanMini_NumberPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_column="2"/>
+
+                <Button
+                    android:id="@+id/btCharhanMini"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_column="3"
+                    android:text="@string/side_indication" />
+            </TableRow>
+
+            <!-- ippin No.6 -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorClassic"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/char_siu_don_name"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_food_name" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/ivCharSiuDon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/hakata_ramen_description"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:src="@drawable/ic_side_96_char_siu_don" />
+
+                <NumberPicker
+                    android:id="@+id/CharSiuDon_NumberPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_column="2"/>
+
+                <Button
+                    android:id="@+id/btCharSiuDon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_column="3"
+                    android:text="@string/side_indication" />
+            </TableRow>
+
+            <!-- ippin No.7 -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorClassic"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/mentai_don_name"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_food_name" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/ivMentaiDon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/hakata_ramen_description"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:src="@drawable/ic_side_96_mentai_don" />
+
+                <NumberPicker
+                    android:id="@+id/MentaiDon_NumberPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_column="2"/>
+
+                <Button
+                    android:id="@+id/btMentaiDon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_column="3"
+                    android:text="@string/side_indication" />
+            </TableRow>
+
+            <!-- ippin No.8 -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorClassic"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/shiro_gohan_name"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_food_name" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/ivShiroGohan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/hakata_ramen_description"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:src="@drawable/ic_side_96_shiro_gohan" />
+
+                <NumberPicker
+                    android:id="@+id/ShiroGohan_NumberPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_column="2"/>
+
+                <Button
+                    android:id="@+id/btShiroGohan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_column="3"
+                    android:text="@string/side_indication" />
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+</RelativeLayout>

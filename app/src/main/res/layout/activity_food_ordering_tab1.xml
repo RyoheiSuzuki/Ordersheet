@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="4">
+
+            <!--
+              *******************************
+              * Main Food
+              *******************************
+            -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorClaret"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/header_ramen"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_header_size" />
+            </TableRow>
+
+            <!-- Main Food No.1 -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorClassic"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/hakata_ramen_name"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_food_name" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/ivHakataRamen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/hakata_ramen_description"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:src="@drawable/ic_ramen_96_hakata" />
+
+                <CheckBox
+                    android:id="@+id/cbHakataRamen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_column="2"
+                    android:text="@string/size_normal" />
+
+                <Button
+                    android:id="@+id/btHakataRamen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_column="3"
+                    android:text="@string/ramen_indication" />
+
+            </TableRow>
+
+            <!-- Main Food No.2 -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorClassic"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/shio_ramen_name"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_food_name" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/ivShioRamen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/shio_ramen_description"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:src="@drawable/ic_ramen_96_shio" />
+
+                <CheckBox
+                    android:id="@+id/cbShioRamen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_column="2"
+                    android:text="@string/size_normal" />
+
+                <Button
+                    android:id="@+id/btShioRamen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_column="3"
+                    android:text="@string/ramen_indication" />
+            </TableRow>
+
+            <!-- Main Food No.3 -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorClassic"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/kuro_ramen_name"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_food_name" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/ivKuroRamen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/kuro_ramen_description"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:src="@drawable/ic_ramen_96_kuro" />
+
+                <CheckBox
+                    android:id="@+id/cbKuroRamen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_column="2"
+                    android:text="@string/size_normal" />
+
+                <Button
+                    android:id="@+id/btKuroRamen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_column="3"
+                    android:text="@string/ramen_indication" />
+            </TableRow>
+
+            <!-- Main Food No.4 -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorClassic"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/aka_ramen_name"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_food_name" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/ivAkaRamen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/aka_ramen_description"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:src="@drawable/ic_ramen_96_aka" />
+
+                <CheckBox
+                    android:id="@+id/cbAkaRamen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_column="2"
+                    android:text="@string/size_normal" />
+
+                <Button
+                    android:id="@+id/btAkaRamen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_column="3"
+                    android:text="@string/ramen_indication" />
+            </TableRow>
+
+            <!-- Main Food No.5 -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorClassic"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/tokumori_ramen_name"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_food_name" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/ivTokumoriRamen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/tokumori_ramen_description"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:src="@drawable/ic_ramen_96_tokumori" />
+
+                <CheckBox
+                    android:id="@+id/cbTokumoriRamen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_column="2"
+                    android:text="@string/size_normal" />
+
+                <Button
+                    android:id="@+id/btTokumoriRamen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_column="3"
+                    android:text="@string/ramen_indication" />
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+</RelativeLayout>
